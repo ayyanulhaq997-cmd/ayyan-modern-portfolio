@@ -89,8 +89,7 @@ function App() {
       throw new Error("Failed to send message");
     }
 
-    setSent(true);
-    form.reset();
+    window.location.href = "/quote-received.html";
   } catch (error) {
     alert("Message could not be sent. Please try again.");
   }
